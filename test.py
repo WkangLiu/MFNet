@@ -9,7 +9,7 @@ from utils.tdataloader import test_dataset
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--testsize', type=int, default=416, help='testing size')
-parser.add_argument('--pth_path', type=str, default='./checkpoints/mfnet5/BGNet-56.pth')
+parser.add_argument('--pth_path', type=str, default='./checkpoints/mfnet5/56.pth')
 
 for _data_name in ['CAMO','CHAMELEON','COD10K']:
 # for _data_name in ['CAMO']:
