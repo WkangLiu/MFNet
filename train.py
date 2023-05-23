@@ -123,8 +123,8 @@ def train(train_loader, model, optimizer, epoch):
     os.makedirs(save_path, exist_ok=True)
     if epoch > 20:
         if epoch % 1 == 0 or epoch == opt.epoch:
-            torch.save(model.state_dict(), save_path + 'BGNet-%d.pth' % epoch)
-            print('[Saving Snapshot:]', save_path + 'BGNet-%d.pth' % epoch)
+            torch.save(model.state_dict(), save_path + 'MFNet-%d.pth' % epoch)
+            print('[Saving Snapshot:]', save_path + 'MFNet-%d.pth' % epoch)
     
         
 def val_camo(test_loader, model, epoch, save_path, writer):
