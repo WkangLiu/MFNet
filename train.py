@@ -122,7 +122,7 @@ def train(train_loader, model, optimizer, epoch):
     save_path = 'checkpoints/{}/'.format(opt.train_save)
     os.makedirs(save_path, exist_ok=True)
     if epoch > 20:
-        if epoch % 1 == 0 or epoch == opt.epoch:
+        if epoch % 5 == 0 or epoch == opt.epoch:
             torch.save(model.state_dict(), save_path + 'MFNet-%d.pth' % epoch)
             print('[Saving Snapshot:]', save_path + 'MFNet-%d.pth' % epoch)
     
